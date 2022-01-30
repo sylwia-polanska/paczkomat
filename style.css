@@ -3,7 +3,7 @@ body{
     text-align: center;
     font-family:'Lato', sans-serif;
     font-size: 20px;
-    overflow: hidden;
+    margin: 0;
 }
 
 button{
@@ -24,7 +24,7 @@ h1{
 }
 
 #mainContent{
-    width: 500px;
+    max-width: 500px;
     position: absolute;
     left: 50%;
     top: 50%;
@@ -85,7 +85,7 @@ h2{
 }
 
 #modalContent{
-    width: 400px;
+    max-width: 400px;
     background-color: #c4c4c4;
     position: absolute;
     left: 50%;
@@ -93,6 +93,8 @@ h2{
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     border: 1px solid black;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 #modalContent button{
@@ -100,3 +102,27 @@ h2{
     margin-bottom: 15px;
     width: 70px;
 }
+
+@media only screen and (max-width: 891px) {
+    #step2 button:last-of-type{
+        margin-left: 5%;
+    }
+    #step1 > div{
+        display: block;
+        width: 100%;
+    }
+    #step1 > div > div{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .collectPackageBtn{
+        width: 200px;
+    }    
+}
+
+@media only screen and (max-width: 707px) {
+    #step2 button:last-of-type{
+        margin-left: 0;
+    }
+}
+
