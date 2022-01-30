@@ -14,7 +14,10 @@
             <h1>ENVELO</h1>
             <p>Możesz mieć swoją przesyłkę w kilkanaście sekund.</br>
             Rozpocznij klikając w przycisk.</p>
-            <div id="step1">
+            <div id="step0">
+                <button class="collectPackageBtn" onclick='goToStep1()'>Odbierz paczkę</button>
+            </div>
+            <div id="step1" class="hidden">
                 <div>
                     <div>
                         <label for="phone"> 
@@ -31,8 +34,8 @@
                         <input id="pickupCode" name="pickupCode" pattern="[0-9]{4}" required maxlength="4">
                     </div>
                 </div>
+                <button class="collectPackageBtn">Odbierz paczkę</button>
             </div>
-            <button id="collectPackageBtn">Odbierz paczkę</button>
         </div>
 
         <script src="script.js"></script>
