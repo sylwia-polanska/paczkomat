@@ -25,3 +25,32 @@ h1{
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
 }
+
+#step1 input{
+    text-align: center;
+    width: 100%;
+    border: none;
+    border-radius: 0;
+    font-size: 25px;
+}
+
+#step1 > div > div{
+    width: 200px;
+}
+
+#step1 > div{
+    display: inline-block;
+    width: 50%;
+}
+
+#step1 label{
+    display: block;
+    font-size: 13px;
+    text-align: left;
+    margin-bottom: 2px;
+}
+
+#step1 > div:last-of-type > div{
+    margin-left: auto;
+}
+

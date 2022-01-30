@@ -14,7 +14,25 @@
             <h1>ENVELO</h1>
             <p>Możesz mieć swoją przesyłkę w kilkanaście sekund.</br>
             Rozpocznij klikając w przycisk.</p>
-            <button>Odbierz paczkę</button>
+            <div id="step1">
+                <div>
+                    <div>
+                        <label for="phone"> 
+                            Numer telefonu
+                        </label>
+                        <input type="tel" id="phone" name="phone" pattern="[0-9]{3}[0-9]{3}[0-9]{3}" required maxlength="9">
+                    </div>
+                </div><!--
+                --><div>
+                    <div>
+                        <label for="pickupCode"> 
+                            Kod odbioru
+                        </label>
+                        <input id="pickupCode" name="pickupCode" pattern="[0-9]{4}" required maxlength="4">
+                    </div>
+                </div>
+            </div>
+            <button id="collectPackageBtn">Odbierz paczkę</button>
         </div>
 
         <script src="script.js"></script>
