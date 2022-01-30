@@ -11,6 +11,7 @@ button{
     height: 80px;
     font-size: 22px;
     margin-top: 50px;
+    cursor: pointer;
 }
 
 .collectPackageBtn{
@@ -59,4 +60,17 @@ h1{
 
 .hidden{
     display: none;
+}
+
+h2{
+    margin-top: 40px;
+}
+
+#step2 button{
+    width: 166px;
+    vertical-align: top;
+}
+
+#step2 button:last-of-type{
+    margin-left: 110px;
 }

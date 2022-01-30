@@ -1,7 +1,22 @@
 function goToStep1(){
-    const step1Element = document.getElementById("step1");
-    step1Element.classList.remove("hidden");
-    const step0Element = document.getElementById("step0");
-    step0Element.classList.add("hidden");
+    removeClassHidden("step1");
+    addClassHidden("step0");
+    addClassHidden("step2");
+}
+
+function goToStep2(){
+    removeClassHidden("step2");
+    addClassHidden("step0");
+    addClassHidden("step1");
+}
+
+function removeClassHidden(elementId){
+    const stepElement = document.getElementById(elementId);
+    stepElement.classList.remove("hidden");
+} 
+
+function addClassHidden(elementId){
+    const stepElement = document.getElementById(elementId);
+    stepElement.classList.add("hidden");
 }
 
