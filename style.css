@@ -3,6 +3,7 @@ body{
     text-align: center;
     font-family:'Lato', sans-serif;
     font-size: 20px;
+    overflow: hidden;
 }
 
 button{
@@ -74,4 +75,28 @@ h2{
 
 #step2 button:last-of-type{
     margin-left: 110px;
+}
+
+#modal{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: rgb(255 255 255 / 40%);
+}
+
+#modalContent{
+    width: 400px;
+    background-color: #c4c4c4;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    border: 1px solid black;
+}
+
+#modalContent button{
+    margin-top: 0;
+    margin-bottom: 15px;
+    width: 70px;
 }

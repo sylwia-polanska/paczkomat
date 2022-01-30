@@ -34,13 +34,19 @@
                         <input id="pickupCode" name="pickupCode" pattern="[0-9]{4}" required maxlength="4" onkeyup="validateInputs()">
                     </div>
                 </div>
-                <button id="pickupButton" class="collectPackageBtn" onclick="goToStep2()" disabled>Odbierz paczkę</button>
+                <button id="pickupButton" class="collectPackageBtn" onclick="goToStep2()">Odbierz paczkę</button>
             </div>
             <div id="step2" class="hidden">
                 <h2>Paczka odebrana!</h2>
-                <p>Zrobiłeś to w czasie 10 sekund! Czy możemy zrobić dla Ciebie coś jeszcze?</p>
+                <p>Zrobiłeś to w czasie <span id="timeTaken"></span> sekund! Czy możemy zrobić dla Ciebie coś jeszcze?</p>
                 <button onclick="goToStep0()">To wszystko na dziś</button>
                 <button onclick="goToStep1()">Odbierz kolejną paczkę</button>
+            </div>
+        </div>
+        <div id="modal" class="hidden">
+            <div id="modalContent">
+                <p>Proszę uzupełnić poprawnie wszystkie wymagane pola</p>
+                <button onclick="closeModal()">OK</button>
             </div>
         </div>
 
